@@ -5,7 +5,7 @@
    Template URL: http://demo.harnishdesign.net/html/simone
    Author URL: https://themeforest.net/user/harnishdesign
    File Description : Main css file of the template
-	
+
 =================================================
   Table of Contents
 =================================================
@@ -34,8 +34,22 @@
 	7 Extra
 
 =======================================================*/
+
+#tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tech-bullets {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
 /* =================================== */
-/*  1. Basic Style 
+/*  1. Basic Style
 /* =================================== */
 body, html {
   height: 100%;

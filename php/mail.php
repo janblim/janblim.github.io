@@ -20,15 +20,15 @@ require './phpmailer/src/SMTP.php';
   // Receiver's Email
 --------------------------------------------- */
 
-$toEmail = "your-email@website.com"; // Replace Your Email Address
+$toEmail = "jan.borja.lim@gmail.com"; // Replace Your Email Address
 
 
 /* --------------------------------------------
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "no-reply@website.com";  // Replace Company's Email Address (preferably currently used Domain Name)
-$fromName = "Company Name"; // Replace Company Name
+$fromEmail = "no-reply@janblim.github.io/";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromName = "Jan Lim"; // Replace Company Name
 
 
 /* --------------------------------------------
@@ -66,7 +66,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 
 	$mail->isHTML(true);
 	$mail->CharSet = 'UTF-8';
-	
+
 	$mail->Subject = $subject . ' [' . $_POST['name'] . ']';
 
 	$mail->Body = '<table align="center" border="0" cellpadding="0" cellspacing="20" height="100%" width="100%">
@@ -89,7 +89,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 							</td>
 						</tr>
 					</table>';
-	
+
 	/*-------------------------------------------------
 		reCaptcha
 	---------------------------------------------------*/
@@ -129,7 +129,7 @@ if (filter_var($toEmail, FILTER_VALIDATE_EMAIL)) {
 	$forcerecap = (!empty($_POST['force_recaptcha']) && $_POST['force_recaptcha'] != 'false' ) ? true : false;
 	if (isset($g_response->action) && $g_response->action == 'contact') {
 		if (isset($g_response->success) && $g_response->success == true && $g_response->action == 'contact') {
-			
+
 		} else if ($forcerecap) {
 			if (!isset($_POST['g-recaptcha-response'])) {
 				echo json_encode(array('response' => 'error', 'Message' => '<div class="alert alert-danger alert-dismissible fade show text-start"><i class="fa fa-exclamation-triangle me-1"></i> ' . $message['recaptcha_error'] . '<button type="button" class="btn-close text-1 mt-1" data-bs-dismiss="alert"></button></div>'));
