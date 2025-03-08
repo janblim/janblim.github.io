@@ -34,20 +34,36 @@
 	7 Extra
 
 =======================================================*/
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
 
 #tech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
 
-#tech-bullets {
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  #tech-bullets {
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-weight: 900;
+  }
 
-}
+  #tech-bullets p {
+    padding-left: 50px;
+  }
+
+  #contact-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
 /* =================================== */
 /*  1. Basic Style
 /* =================================== */

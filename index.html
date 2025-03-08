@@ -245,14 +245,14 @@
         <div id="tech">
           <h2 class="text-6 text-white align-self-center fw-600 mt-4 mb-4">Technologies</h2>
           <h5 id="tech-bullets">
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">JavaScript </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">Python </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">Node.js </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">Redux </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">React </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">Flask </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">SQL </span></pre>
-              <pre class="text-primary">  > <span class="text-light fw-500 text-start mb-2">R </span></pre>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">JavaScript </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">Python </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">Node.js </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">Redux </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">React </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">Flask </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">SQL </span></p>
+              <p class="text-primary"> > &nbsp; <span class="text-light fw-500 text-start mb-2">R </span></p>
           </h5>
         </div>
 
@@ -457,14 +457,12 @@
         <!-- Heading -->
         <div class="position-relative d-flex text-center mb-5">
           <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Contact</h2>
-          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Let's Get in Touch!<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">What's Next?<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
         </div>
         <!-- Heading end-->
-        <div class="row gy-5">
-          <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
-            <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
-            <p class="text-3 text-light mb-4">189 W 228 st, <br>
-              Carson, CA 90745 </p>
+        <div id="contact-me">
+            <h2 class="mb-3 text-5 text-white-50 text-center text-md-start">I'm actively looking for full-time or internship positions. </h2>
+            <br></br>
             <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fas fa-phone"></i></span>(608) 334 0491</p>
             <p class="text-3 text-light mb-4"><span class="text-primary text-4 me-2"><i class="fas fa-envelope"></i></span>jan.borja.lim@gmail.com</p>
             <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
@@ -472,26 +470,10 @@
               <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://github.com/janblim" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
               <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/jan-lim-60859b32/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-          </div>
-          <div class="col-md-8 col-xl-9 order-0 order-md-1">
-            <h2 class="mb-3 text-5 text-white-50 text-center text-md-start">I'm actively looking for full-time or internship positions... </h2>
-			<form id="contact-form" class="form-dark" action="php/mail.php" method="post">
-			  <div class="row g-4">
-                <div class="col-xl-6">
-                    <input name="name" type="text" class="form-control" required placeholder="Name">
-                </div>
-                <div class="col-xl-6">
-                    <input name="email" type="email" class="form-control" required placeholder="Email">
-                </div>
-				<div class="col">
-					<textarea name="form-message" class="form-control" rows="5" required placeholder="How can I help...?"></textarea>
-				</div>
-              </div>
+
               <p class="text-center mt-4 mb-0">
-				<button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send</button>
+				<button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit" onclick="window.location.href='mailto:jan.borja.lim@gmail.com'">Contact Me</button>
               </p>
-            </form>
-          </div>
         </div>
       </div>
     </section>
