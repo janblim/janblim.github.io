@@ -47,6 +47,45 @@
 	justify-content: center;
   }
 
+  /**
+ * skills
+ */
+
+.skills-title { margin-bottom: 10px; }
+
+.skills-list {
+  list-style-type: none;
+  background-color: #111418;
+  padding: 3rem;
+  border-radius: var(--bs-border-radius)
+}
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skill .title-wrapper data {
+  color: lightgray;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.skills-icon {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  height: 60px;
+}
+
   #tech-bullets {
 	padding: 50px;
 	display: flex;
