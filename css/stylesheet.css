@@ -57,6 +57,7 @@
   list-style-type: none;
   background-color: #111418;
   padding: 3rem;
+  margin-bottom: 40px;
   border-radius: var(--bs-border-radius)
 }
 
